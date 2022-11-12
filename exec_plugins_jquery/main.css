@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0c2c2;
+    padding-top: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form {
+    max-width: 960px;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+ 
+.form-campo label {
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+}
+ 
+.form-campo input {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
