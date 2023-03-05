@@ -1,14 +1,3 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     document.getElementById('btn-buscar-cep').addEventListener('click', function() {
-//         const xhttp = new XMLHttpRequest();
-//         const cep = document.getElementById('cep').value;
-//         const endPoint = `https://viacep.com.br/ws/${cep}/json`;
-
-//         xhttp.open('GET', endPoint);
-//         xhttp.send();
-//     })
-// })
-
 $(document).ready(function() {
 
     $('#cep').mask('00000-000');
@@ -29,7 +18,7 @@ $(document).ready(function() {
             const bairro = json.bairro;
             const cidade = json.localidade;
             const estado = json.uf;
-            // const endereco = `${logradouro}, ${bairro}, ${cidade}/${estado}`;
+
             $('#endereco').val(logradouro);
             $('#bairro').val(bairro);
             $('#cidade').val(cidade);
@@ -50,18 +39,5 @@ $(document).ready(function() {
                 throw new Error('Digite o nome');
             }
         })
-
-        // $.ajax(endPoint).done(function(response) {
-        //     const logradouro = response.logradouro;
-        //     const bairro = response.bairro;
-        //     const cidade = response.localidade;
-        //     const estado = response.uf;
-        //     const endereco = `${logradouro}, ${bairro}, ${cidade}/${estado}`;
-
-        //     $('#endereco').val(endereco);
-
-        //     $(botao).find('i').removeClass('d-none');
-        //     $(botao).find('span').addClass('d-none');
-        // })
     })
 })
